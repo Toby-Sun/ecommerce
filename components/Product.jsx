@@ -13,7 +13,9 @@ const Product = ({ product: { image, name, slug, price } }) => {
             height={250}
             className="product-image"
           />
+          {/* == product.name */}
           <p className="product-name">{name}</p>
+          {/* == product.price etc*/}
           <p className="product-price">${price}</p>
         </div>
       </Link>

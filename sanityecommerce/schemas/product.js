@@ -4,6 +4,19 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'isBestSelling',
+      title: 'Is Best Selling',
+      type: 'boolean',
+    },
+    {
+      name: 'category',
+      title: 'Category',
+      type: 'string',
+      options: {
+        list: ['Headphones', 'Earphones', 'Speaker'],
+      },
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'array',
@@ -35,6 +48,16 @@ export default {
       name: 'details',
       title: 'Details',
       type: 'string',
+    },
+    {
+      name: 'reviewNumber',
+      title: 'Review Number',
+      type: 'number',
+    },
+    {
+      name: 'fillStar',
+      title: 'Fill Star',
+      type: 'number',
     },
   ],
 }

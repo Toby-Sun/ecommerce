@@ -28,8 +28,13 @@ a {
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  margin: 6px 18px;
+  margin: 10px 18px;
   position: relative;
+}
+.logo-container {
+  height: auto;
+  width: 180px;
+  cursor: pointer;
 }
 .marquee-text {
   font-size: 29px;
@@ -135,7 +140,8 @@ span.text-red {
   position: relative;
   height: 500px;
   line-height: 0.9;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .hero-banner-container .beats-solo {
@@ -167,8 +173,8 @@ span.text-red {
 }
 .hero-banner-image {
   position: absolute;
-  top: 0%;
-  right: 20%;
+  top: 5%;
+  right: 10%;
   width: 450px;
   height: 450px;
 }
@@ -440,9 +446,6 @@ span.text-red {
   cursor: pointer;
 }
 
-.selected-image {
-  background-color: #f02d34;
-}
 .reviews {
   color: #f02d34;
   margin-top: 10px;
@@ -465,7 +468,7 @@ span.text-red {
   font-weight: 700;
   font-size: 26px;
   margin-top: 30px;
-  color: #f02d34;
+  color: #000;
 }
 .price .old-price,
 .product-price .old-price,
@@ -751,4 +754,27 @@ span.text-red {
     width: 300px;
     margin: auto;
   }
+}
+
+.product-category-button {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0px;
+}
+.product-category-button button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #eaeaea;
+  color: #324d67;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+}
+.product-category-button button.active {
+  background-color: #f02d34;
+  color: #fff;
 }
