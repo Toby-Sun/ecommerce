@@ -11,20 +11,20 @@ const Home = ({ products, bannerData }) => {
   return (
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-      <div className="products-heading">
-        <h2>Best Selling Products</h2>
-      </div>
-      <div className="products-container">
-        {products
-          ?.filter((product) => product.isBestSelling)
-          .map((product) => (
-            <Product key={product._id} product={product} />
-          ))}
+      <div className="maylike-products-wrapper">
+        <h1>Best Selling Products</h1>
+        <div className="marquee">
+          <div className="maylike-products-container track">
+            {products
+              ?.filter((product) => product.isBestSelling)
+              .map((product) => (
+                <Product key={product._id} product={product} />
+              ))}
+          </div>
+        </div>
       </div>
       {/* headphones, earphones, speaker product list */}
-      <div className="products-container">
-        <ProductCategory products={products} />
-      </div>
+      <ProductCategory products={products} />
       <FooterBanner footerBanner={bannerData && bannerData[0]} />
     </>
   );

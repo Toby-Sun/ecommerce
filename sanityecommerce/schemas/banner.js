@@ -17,14 +17,18 @@ export default {
       type: 'string',
     },
     {
-      name: 'product',
-      title: 'Product',
+      name: 'name',
+      title: 'Name',
       type: 'string',
     },
     {
-      name: 'desc',
-      title: 'Desc',
-      type: 'string',
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'name',
+        maxLength: 90,
+      },
     },
     {
       name: 'smallText',
@@ -39,21 +43,6 @@ export default {
     {
       name: 'largeText1',
       title: 'LargeText1',
-      type: 'string',
-    },
-    {
-      name: 'largeText2',
-      title: 'LargeText2',
-      type: 'string',
-    },
-    {
-      name: 'discount',
-      title: 'Discount',
-      type: 'string',
-    },
-    {
-      name: 'saleTime',
-      title: 'SaleTime',
       type: 'string',
     },
   ],
