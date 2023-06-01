@@ -152,9 +152,9 @@ span.text-red {
 }
 
 .hero-banner-container .beats-solo {
-  font-size: 5vw;
+  font-size: 60px;
   color: #f02d34;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: -4px;
   font-weight: bold;
 }
@@ -173,7 +173,7 @@ span.text-red {
 }
 
 .hero-banner-container h3 {
-  font-size: 4vw;
+  font-size: 50px;
   margin-top: 6px;
   margin-bottom: 10px;
   margin-left: -6px;
@@ -181,9 +181,10 @@ span.text-red {
 }
 
 .hero-banner-container h1 {
-  font-size: 6vw;
+  font-size: 80px;
   margin-left: -10px;
   text-transform: uppercase;
+  margin-left: -6px;
 }
 
 .hero-banner-image {
@@ -261,12 +262,12 @@ span.text-red {
 
 .banner-desc .right h3 {
   font-weight: 900;
-  font-size: 3vw;
+  font-size: 44px;
   margin-bottom: 10px;
 }
 .banner-desc .right h1 {
   font-weight: 900;
-  font-size: 4vw;
+  font-size: 70px;
   margin-bottom: 20px;
   color: #000;
 }
