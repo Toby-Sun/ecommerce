@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { client } from "../lib/client";
 import {
   Product,
@@ -8,9 +8,13 @@ import {
 } from "../components";
 
 const Home = ({ products, bannerData }) => {
+  const productCategoryRef = useRef(null);
   return (
     <>
-      <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+      <HeroBanner
+        heroBanner={bannerData.length && bannerData[0]}
+        productCategoryRef={productCategoryRef}
+      />
       <div className="maylike-products-wrapper">
         <h1>Best Selling Products</h1>
         <div className="marquee">
@@ -24,7 +28,9 @@ const Home = ({ products, bannerData }) => {
         </div>
       </div>
       {/* headphones, earphones, speaker product list */}
-      <ProductCategory products={products} />
+      <div ref={productCategoryRef}>
+        <ProductCategory products={products} />
+      </div>
       <FooterBanner footerBanner={bannerData && bannerData[0]} />
     </>
   );
