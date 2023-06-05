@@ -1,5 +1,5 @@
 # Kali Soundbox online store
-!(./homepage_1.jpeg)
+![homepage1](./homepage_1.jpeg)
 
 > Experience the best in audio equipment at Kali Soundbox - your one-stop shop for premium audio devices.
 
